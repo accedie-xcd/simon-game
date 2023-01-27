@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon-game</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <audio id="clip1">
+  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source>
+  </audio>
+  <audio id="clip2">
+  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source>
+  </audio>
+  <audio id="clip3">
+  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source>
+  </audio>
+  <audio id="clip4">
+  	<source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
+  </audio>
+</head>
+<body class="h-screen">
+  <main class="h-full w-full ">
+    <div id="outer-circle" class=" relative top-40 mx-auto border-8 border-black text-center w-96 rounded-full aspect-square align-middle ">
+      <div id="top-left" class=" absolute bg-green-800 w-48 h-48 rounded-tl-full right-1/2 bottom-1/2" ></div>
+
+      <div id="top-right" class=" absolute bg-red-800 w-48 h-48 rounded-tr-full left-1/2 bottom-1/2 "></div>
+
+      <div id="bottom-left" class=" absolute bg-yellow-800 w-48 h-48 rounded-bl-full right-1/2 top-1/2"></div>
+
+      <div id="bottom-right" class=" absolute bg-blue-800 w-48 h-48 rounded-br-full left-1/2 top-1/2" ></div>
+
+      <div id="inner-circle" class=" absolute border-4 border-black rounded-full w-48 h-48  bg-slate-500 top-[90px] left-[90px]">
+        <div id="title" class="absolute text-4xl font-bold left-10 top-6">Simon</div>
+        <button id="start-button" class="absolute bg-orange-500 top-20 left-14 w-20 rounded-full ">Start
+        </button>
+        <div id="turn-counter" class="absolute bg-red-900 p-3 pb-9 w-12 h-8 font-semibold text-red-400 left-[72px] top-28">-</div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

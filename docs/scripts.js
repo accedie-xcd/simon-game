@@ -136,7 +136,7 @@ function check() {
     return turnCounter.innerHTML = `lol`;
   }
   
-  if(tracker === 5){
+  if(tracker === 10){
     interactable = false;
     started = false;
     tracker = 0;
